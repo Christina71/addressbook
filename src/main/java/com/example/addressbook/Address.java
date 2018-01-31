@@ -19,7 +19,7 @@ public class Address {
 
     @NotNull
     @Size(min=5)
-    private String address;
+    private String address1;
 
     @NotNull
     @Size(min=10)
@@ -45,12 +45,12 @@ public class Address {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
+    public String getAddress1() {
+        return address1;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddress1(String address1) {
+        this.address1 = address1;
     }
 
     public String getPhone() {

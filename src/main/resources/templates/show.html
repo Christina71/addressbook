@@ -7,7 +7,7 @@
 <body>
 <a href="/">Show all Addresses</a><br/>
 Name:<span th:text="${address.name}"></span>
-Address:<p th:text="${address.address}"></p>
+Address:<p th:text="${address.address1}"></p>
 Phone:<span th:text="${address.phone}"></span>
 Email:<span th:text="${address.email}"></span> <br/>
 <a th:href="@{/delete/{id}(id=${address.id})}">Delete this address</a>

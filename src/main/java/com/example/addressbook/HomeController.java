@@ -19,7 +19,7 @@ public class HomeController {
 
     @RequestMapping ("/")
     public String listAddress (Model model) {
-        model.addAttribute("address", addressRepository.findAll());
+        model.addAttribute("addresses", addressRepository.findAll());
         return "list";
     }
 
