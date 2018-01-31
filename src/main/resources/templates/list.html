@@ -14,15 +14,15 @@
         <th> Email</th>
         <td>Actions</td>
     </tr>
-    <tr th:each="address:${address}">
+    <tr th:each="address : ${addresses}">
         <td th:text = "${address.name}"></td>
         <td th:text = "${address.address1}"></td>
         <td th:text = "${address.phone}"></td>
         <td th:text = "${address.email}"></td>
         <td>
-            <a th:href="@{/update/{id}(id=${address.id})}}">Update</a> -
-            <a th:href="@{/detail/{id}(id=${address.id})}}">Details</a> -
-            <a th:href="@{/delete/{id}(id=${address.id})}}">Delete</a>
+            <a th:href="@{/update/{id}(id=${address.id})}">Update</a> -
+            <a th:href="@{/detail/{id}(id=${address.id})}">Details</a> -
+            <a th:href="@{/delete/{id}(id=${address.id})}">Delete</a>
         </td>
     </tr>
 </table>
